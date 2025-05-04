@@ -119,6 +119,7 @@ ul li span:hover{
     
     .row {
         padding-left: 10px;
+        overflow: hidden;
     }
     
     input {
@@ -127,8 +128,9 @@ ul li span:hover{
     }
     
     button {
-        padding: 12px 30px;
+        padding: 12px 25px;
         font-size: 14px;
+        white-space: nowrap;
     }
     
     ul li {
@@ -148,5 +150,21 @@ ul li span:hover{
         height: 35px;
         font-size: 18px;
         line-height: 35px;
+    }
+}
+/* Extra small screens */
+@media screen and (max-width: 360px) {
+    button {
+        padding: 12px 20px;
+        font-size: 13px;
+    }
+    
+    input {
+        font-size: 14px;
+        padding: 6px;
+    }
+    
+    .todo-app {
+        padding: 15px 10px 30px;
     }
 }
